@@ -27,7 +27,7 @@ const FarmersHub = () => {
   const [chatHistory, setChatHistory] = useState([
     {
       type: 'bot',
-      message: 'Muraho! Ndi ChatBot w\'ubuhinzi. Nshobora gufasha mu bikoresho by\'ubuhinzi. Ubaza iki?',
+      message: 'Muraho! Ndi ChatBot w\'ubuhinzi. Nshobora gufasha mu bikoresho by\'ubuhinzi. wambaza icyo ushaka?',
       time: '10:30'
     }
   ]);
@@ -128,13 +128,13 @@ const FarmersHub = () => {
       const lowerMessage = chatMessage.toLowerCase();
       
       if (lowerMessage.includes('ibigori') || lowerMessage.includes('maize')) {
-        botResponse = 'Kubi ibigori, ni ngombwa gukoresha ifumbire nziza, guhitamo imbuto ziza, no kugira amazi ahagije. Ugomba gusarura ku munsi umunani.';
+        botResponse = 'Kubi ibigori, ni ngombwa gukoresha ifumbire nziza, guhitamo imbuto ziza, no kugira amazi ahagije. Ugomba kwita neza kubigori kugirango ugire isarura ryiza.';
       } else if (lowerMessage.includes('inka') || lowerMessage.includes('cow')) {
         botResponse = 'Inka zigomba kugira ibiribwa byiza, amazi meza, n\'ahantu heza ho kuraramo. Kandi zigomba gutabarwa na muganga w\'amatungo buri gihe.';
       } else if (lowerMessage.includes('ifumbire') || lowerMessage.includes('fertilizer')) {
         botResponse = 'Ifumbire nyinshi ishobora gukoreshwa: ifumbire karemano, ifumbire ya kimitirire. Hitamo ubwoko bukwiye uturutse ku mahame y\'ubutaka bwawe.';
       } else {
-        botResponse = 'Urakoze kubaza. Nshobora gufasha mu bikoresho by\'ubuhinzi nk\'ibigori, inka, ifumbire, n\'ibindi. Ubaza ikindi?';
+        botResponse = 'Urakoze kubaza. Nshobora gufasha mu bikoresho by\'ubuhinzi ,\'ibigori, inka, ifumbire, n\'ibindi. Ubaza ikindi?';
       }
 
       const botMessage = {
